@@ -121,10 +121,10 @@ function TermsAndConditions({ onAcceptToS }: { onAcceptToS: () => void }) {
 }
 
 // Wrapper Component for Terms Acceptance
-function AcceptTermsWrapper({ onAcceptToS }: { onAcceptToS: () => void }) {
+function AcceptTermsWrapper() {
     return (
         <div className='flex w-screen flex-col items-center py-10'>
-            <TermsAndConditions onAcceptToS={onAcceptToS} />
+            <TermsAndConditions onAcceptToS={() => console.log('accepted')} />
         </div>
     );
 }
