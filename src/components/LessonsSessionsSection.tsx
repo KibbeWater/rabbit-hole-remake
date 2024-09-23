@@ -335,7 +335,7 @@ const Lesson = ({
                         margin: '5px 5px 5px 5px',
                         padding: '5px 15px 5px 15px',
                     }}
-                    href={`${window.location.href}/record`}
+                    href={`/rabbit-hole-remake/teach-mode/replay`}
                 >
                     Replay
                 </a>
