@@ -1,0 +1,8 @@
+---
+import Layout from '../../components/Layout.astro';
+import LAM from '../../components/Record.tsx';
+---
+
+<Layout>
+    <LAM client:only accessToken='' lessonId='1' replayIsAvailable={true} recordIsAvailable={true} />
+</Layout>

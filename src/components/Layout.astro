@@ -1,0 +1,32 @@
+---
+import Navbar from './Navbar.astro';
+import Footer from './Footer.astro';
+---
+
+<html lang='en'>
+    <head>
+        <meta charset='utf-8' />
+        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+        <meta name='viewport' content='width=device-width' />
+        <meta name='generator' content={Astro.generator} />
+        <style>
+            @font-face {
+                font-family: 'PowerGrotesk';
+                src:
+                    url('/assets/fonts/PowerGrotesk-Variable.woff2') format('woff2'),
+                    url('/assets/fonts/PowerGrotesk-Variable.ttf') format('truetype');
+                text-rendering: optimizeLegibility;
+            }
+        </style>
+        <title>Astro</title>
+    </head>
+    <body
+        class='flex flex-grow flex-col text-white min-h-dvh bg-[#0d0d0d] pt-[60px]'
+        ,
+        style='font-family: PowerGrotesk;'
+    >
+        <Navbar />
+        <main class='flex flex-grow p-4 md:p-12'><slot /></main>
+        <Footer />
+    </body>
+</html>

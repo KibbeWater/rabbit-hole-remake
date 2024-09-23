@@ -1,0 +1,145 @@
+---
+import { Image } from 'astro:assets';
+
+import RabbitholeWhite from '../assets/rabbithole_white.png';
+---
+
+<nav
+    class='fixed inset-0 mb-8 flex h-[60px] w-full items-center justify-between px-6 py-[20px] leading-[20px] md:mb-0 md:h-[80px] md:p-6 md:px-8 md:pt-6 md:leading-normal md:opacity-100 bg-black'
+>
+    <a class='h-3' href='/'>
+        <Image class={'h-3'} height={12} src={RabbitholeWhite} alt={'rabbithole logo'} />
+    </a>
+    <div class='z-50 w-full'>
+        <div class='h-full space-x-1 md:ml-0 md:flex md:flex-row md:justify-end md:gap-6 hidden'>
+            <div class='h-full space-x-1 md:ml-0 md:flex md:flex-row md:justify-end md:gap-6 hidden'>
+                <div class='ml-1 h-full'>
+                    <div class='flex h-full flex-col items-center justify-center'>
+                        <div
+                            class='text-3xl font-normal text-white md:text-base opacity-100 md:flex md:items-center md:justify-center transition duration-300 ease-in-out md:hover:opacity-40 cursor-pointer'
+                        >
+                            <div class='justify-cetner flex flex-row items-center gap-2'><p>journal</p></div>
+                        </div>
+                    </div>
+                </div><div class='ml-1 h-full'>
+                    <div class='flex h-full flex-col items-center justify-center'>
+                        <div
+                            class='text-3xl font-normal text-white md:text-base opacity-60 md:flex md:items-center md:justify-center transition duration-300 ease-in-out md:hover:opacity-40 cursor-pointer'
+                        >
+                            <div class='justify-cetner flex flex-row items-center gap-2'><p>connections</p></div>
+                        </div>
+                    </div>
+                </div><div class='ml-1 h-full'>
+                    <div class='flex h-full flex-col items-center justify-center'>
+                        <div
+                            class='text-3xl font-normal text-white md:text-base opacity-60 md:flex md:items-center md:justify-center transition duration-300 ease-in-out md:hover:opacity-40 cursor-pointer'
+                        >
+                            <a href='/teach-mode' class='justify-cetner flex flex-row items-center gap-2'>
+                                <p>teach mode</p>
+                                <span
+                                    class='py-py inline-block rounded-full border border-orange-400 px-1.5 text-xl font-light leading-none text-orange-400 md:text-sm'
+                                >
+                                    alpha
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div><div class='ml-1 h-full'>
+                    <div class='flex h-full flex-col items-center justify-center'>
+                        <div
+                            class='text-3xl font-normal text-white md:text-base opacity-60 md:flex md:items-center md:justify-center transition duration-300 ease-in-out md:hover:opacity-40 cursor-pointer'
+                        >
+                            <a href='/lam' class='justify-cetner flex flex-row items-center gap-2'>
+                                <p>LAM</p>
+                                <span
+                                    class='py-py inline-block rounded-full border border-orange-400 px-1.5 text-xl font-light leading-none text-orange-400 md:text-sm'
+                                >
+                                    playground
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='ml-1 h-full'>
+                    <div class='flex h-full flex-col items-center justify-center'>
+                        <div
+                            class='text-3xl font-normal text-white md:text-base opacity-60 md:flex md:items-center md:justify-center transition duration-300 ease-in-out md:hover:opacity-40 cursor-pointer'
+                        >
+                            <div class='justify-cetner flex flex-row items-center gap-2'>
+                                <p>settings</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class='md:bg-gray-850 min-h-[260px] bg-gray-900 md:absolute md:right-6 md:top-[6em] md:h-auto md:min-h-[0px] md:w-[130px] md:rounded-3xl md:p-0 md:p-7 md:backdrop-blur-sm fixed right-0 top-0 h-auto w-full bg-opacity-60 p-6 backdrop-blur-lg hidden'
+                            >
+                                <div
+                                    class='flex flex-col md:ml-0 md:items-end md:justify-center md:gap-1 ml-[20px] items-start justify-start gap-[20px]'
+                                >
+                                    <div
+                                        class='flex h-[20px] w-full cursor-pointer flex-row items-center justify-between md:hidden'
+                                    >
+                                        <svg
+                                            xmlns='http://www.w3.org/2000/svg'
+                                            width='20'
+                                            height='20'
+                                            viewBox='0 0 56 56'
+                                        >
+                                            <path
+                                                fill='currentColor'
+                                                d='M35.805 47.723c.398.398.914.633 1.523.633c1.219 0 2.133-.915 2.133-2.133c0-.586-.234-1.125-.61-1.524L21.79 28.012l17.063-16.688c.375-.398.609-.96.609-1.523c0-1.219-.914-2.157-2.133-2.157c-.61 0-1.125.235-1.523.633L17.242 26.441c-.445.375-.703.961-.703 1.57c0 .587.258 1.126.703 1.571Z'
+                                            >
+                                            </path>
+                                        </svg>
+                                        <svg
+                                            width='20'
+                                            height='15'
+                                            viewBox='0 0 16 15'
+                                            fill='none'
+                                            xmlns='http://www.w3.org/2000/svg'
+                                        >
+                                            <line
+                                                y1='-0.5'
+                                                x2='19'
+                                                y2='-0.5'
+                                                transform='matrix(-0.707107 -0.707107 -0.707107 0.707107 14.4355 14.435)'
+                                                stroke='currentColor'
+                                            >
+                                            </line>
+                                            <line x1='1.08199' y1='14.0815' x2='14.517' y2='0.646446' stroke='white'>
+                                            </line>
+                                        </svg>
+                                    </div>
+                                    <div class=''>
+                                        <a
+                                            class='ml-[30px] block text-right text-3xl md:text-base font-normal text-white opacity-60 hover:opacity-40'
+                                            href='/settings/profile'
+                                        >
+                                            profile
+                                        </a>
+                                    </div><div class=''>
+                                        <a
+                                            class='ml-[30px] block text-right text-3xl md:text-base font-normal text-white opacity-60 hover:opacity-40'
+                                            href='/settings/device'>device</a
+                                        >
+                                    </div><div class='hidden'>
+                                        <a
+                                            class='ml-[30px] block text-right text-3xl md:text-base font-normal text-white opacity-60 hover:opacity-40'
+                                            href='/activate'>activate</a
+                                        >
+                                    </div><div class=''>
+                                        <a
+                                            href='/api/auth/logout'
+                                            class='ml-[30px] block text-right text-3xl md:text-base font-normal text-orange-400 opacity-100 hover:opacity-70'
+                                            >logout</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
