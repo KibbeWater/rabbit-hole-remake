@@ -84,15 +84,20 @@ const LessonReplay = ({
 
         return (
             <div className='flex h-[50px] w-full items-center justify-between border-b border-gray-700 text-lg text-gray-600'>
-                <TabLink disabled={false} href='./login' label='login' isActive={currentTab === 'login'} />
                 <TabLink
-                    href='./record'
+                    disabled={false}
+                    href='/rabbit-hole-remake/teach-mode/login'
+                    label='login'
+                    isActive={currentTab === 'login'}
+                />
+                <TabLink
+                    href='/rabbit-hole-remake/teach-mode/record'
                     label='teach'
                     isActive={currentTab === 'record'}
                     disabled={!recordIsAvailable}
                 />
                 <TabLink
-                    href='./replay'
+                    href='/rabbit-hole-remake/teach-mode/replay'
                     label='replay'
                     isActive={currentTab === 'replay'}
                     disabled={!replayIsAvailable}

@@ -27,7 +27,7 @@ const NavBar = ({
             <div
                 className={`flex h-full items-center p-2 ${currentPath === 'login' ? 'border-b-2 border-white text-white' : ''}`}
             >
-                <a href='./login'>login</a>
+                <a href='/rabbit-hole-remake/teach-mode/login'>login</a>
             </div>
 
             {/* Teach Link */}
@@ -35,7 +35,7 @@ const NavBar = ({
                 className={`flex h-full items-center p-2 ${currentPath === 'record' ? 'border-b-2 border-white text-white' : ''}`}
             >
                 <a
-                    href='./record'
+                    href='/rabbit-hole-remake/teach-mode/record'
                     style={{
                         pointerEvents: recordIsAvailable ? 'auto' : 'none',
                         color: recordIsAvailable ? 'undefined' : 'gray',
@@ -50,7 +50,7 @@ const NavBar = ({
                 className={`flex h-full items-center p-2 ${currentPath === 'replay' ? 'border-b-2 border-white text-white' : ''}`}
             >
                 <a
-                    href='./replay'
+                    href='/rabbit-hole-remake/teach-mode/replay'
                     style={{
                         pointerEvents: replayIsAvailable ? 'auto' : 'none',
                         color: replayIsAvailable ? 'undefined' : 'gray',
