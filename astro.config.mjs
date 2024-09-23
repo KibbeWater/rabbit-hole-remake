@@ -12,5 +12,6 @@ export default defineConfig({
         }),
         tailwind(),
     ],
+    base: '/rabbit-hole-remake',
+    site: 'https://kibbewater.github.io',
 });
-
